@@ -1,12 +1,9 @@
-import alertify from "alertifyjs";
-import "alertifyjs/build/css/alertify.css";
-import React, { useState } from "react";
+import React from "react";
 import "./Header.css";
 import logo from "./logo.jpg";
 function Header({ sepetItem, total, DeletSepet }) {
   return (
     <div className="header">
-      {alertify.alert("Ready!")}
       <img src={logo} alt="" className="logo" />
       <ul className="design-flex">
         <li>

@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 import Cards from "./Cards";
 import Form from "./Form";
 import Header from "./Header";
@@ -18,24 +19,28 @@ function Main() {
   const [dolar, setDolar] = useState(0);
   const [sepetList, setSepetList] = useState([]);
   const add = () => {
-    setId(id + 1);
-    setList([
-      ...list,
-      {
-        id: id,
-        ad: _name,
-        icerik: content,
-        yazar: author,
-        resim: file,
-        fiyat: price,
-        count: 1,
-      },
-    ]);
-    setAuthor("");
-    setContent("");
-    setName("");
-    setPrice("");
-    setMode("add");
+    if (_name && author && file && content && price) {
+      setId(id + 1);
+      setList([
+        ...list,
+        {
+          id: id,
+          ad: _name,
+          icerik: content,
+          yazar: author,
+          resim: file,
+          fiyat: price,
+          count: 1,
+        },
+      ]);
+      setAuthor("");
+      setContent("");
+      setName("");
+      setPrice("");
+      setMode("add");
+    } else {
+      toast("Eksik Veri Girdiniz");
+    }
   };
   const Delete = (index) => {
     setList(list.filter((item, indexItem) => index !== indexItem));
@@ -136,6 +141,7 @@ function Main() {
           add={add}
           update={update}
         />
+        <Toaster />
         <Cards
           list={list}
           dolar={dolar}
