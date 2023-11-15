@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Col, Container, Row } from "reactstrap";
+import { Container, Row } from "reactstrap";
 import Categories from "./Components/Categories";
 import Header from "./Components/Header";
 import Movies from "./Components/Movies";
@@ -7,16 +7,21 @@ import "./site.css";
 export default class App extends Component {
   state = {
     currentCategory: "",
-    movies: [],
+    Catmovies: [],
+    Allmovies: [],
     fav: [],
-    statu: false,
+    movies: [],
   };
-  chanceCategory = (category) => {
-    this.setState({ currentCategory: category.categoryName });
-    this.getMovies(category.id);
-    this.setState({ statu: false });
+  componentDidMount() {
+    this.getMovies();
+  }
+  getMovies = () => {
+    let url = "http://localhost:3000/movies";
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => this.setState({ Allmovies: data }));
   };
-  getMovies = (categoryId) => {
+  getMoviesByCategory = (categoryId) => {
     let url = "http://localhost:3000/movies";
     if (categoryId) {
       url += "?categoryId=" + categoryId;
@@ -24,29 +29,29 @@ export default class App extends Component {
 
     fetch(url)
       .then((response) => response.json())
-      .then((data) => this.setState({ movies: data }));
+      .then((data) => this.setState({ Catmovies: data }));
+  };
+  changeCategory = (category) => {
+    this.setState({ currentCategory: category.categoryName });
+    this.getMoviesByCategory(category.id);
   };
 
   getFavs = () => {
     this.setState({ currentCategory: "Favoriler" });
-    this.setState({ statu: true });
   };
-  componentDidMount() {
-    this.getMovies();
-  }
 
   addToFav = (movie) => {
-    this.setState({ statu: false });
     movie.isFavorite = !movie.isFavorite;
-    let newFav = this.state.movies.filter((c) => c.isFavorite === true);
+    let newFav = this.state.fav;
+    newFav.push(movie);
     this.setState({ fav: newFav });
   };
 
   removeToFav = (movie) => {
     movie.isFavorite = !movie.isFavorite;
 
-    let newFav = this.state.movies.filter((c) => c.isFavorite === true);
-    this.setState({ fav: newFav });
+    const newnewfav = this.state.fav.filter((i) => i.id !== movie.id);
+    this.setState({ fav: newnewfav });
   };
 
   render() {
@@ -60,15 +65,15 @@ export default class App extends Component {
         <Container>
           <Row>
             <Categories
-              chanceCategory={this.chanceCategory}
+              changeCategory={this.changeCategory}
               currentCategory={this.state.currentCategory}
             />
             <Movies
               addToFav={this.addToFav}
               removeToFav={this.removeToFav}
-              movies={this.state.movies}
+              Allmovies={this.state.Allmovies}
+              Catmovies={this.state.Catmovies}
               fav={this.state.fav}
-              statu={this.state.statu}
               currentCategory={this.state.currentCategory}
             />
           </Row>

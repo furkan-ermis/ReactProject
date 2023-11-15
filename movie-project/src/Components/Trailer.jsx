@@ -5,20 +5,10 @@ import { PiVideoFill } from "react-icons/pi";
 import { Button, Modal, ModalBody, ModalFooter, ModalHeader } from "reactstrap";
 function Trailer(props) {
   const [modal, setModal] = useState(false);
-  const [nestedModal, setNestedModal] = useState(false);
-  const [closeAll, setCloseAll] = useState(false);
   let movie = props.movie;
   let add = props.addToFav;
   let remove = props.removeToFav;
   const toggle = () => setModal(!modal);
-  const toggleNested = () => {
-    setNestedModal(!nestedModal);
-    setCloseAll(false);
-  };
-  const toggleAll = () => {
-    setNestedModal(!nestedModal);
-    setCloseAll(true);
-  };
 
   return (
     <div>
@@ -43,6 +33,7 @@ function Trailer(props) {
           <ModalHeader toggle={toggle}>{movie.title}</ModalHeader>
           <ModalBody>
             <iframe
+              title={movie.title}
               width="100%"
               height="500px"
               src={

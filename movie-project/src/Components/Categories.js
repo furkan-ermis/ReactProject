@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { ListGroup, ListGroupItem } from "reactstrap";
 
 export default class Categories extends Component {
   state = {
@@ -24,7 +23,7 @@ export default class Categories extends Component {
             <div
               className="categoryItem"
               data-active={category.categoryName === this.props.currentCategory}
-              onClick={() => this.props.chanceCategory(category)}
+              onClick={() => this.props.changeCategory(category)}
               key={category.id}
             >
               {category.categoryName}

@@ -1,24 +1,19 @@
 import React, { Component } from "react";
 import { FaRegHeart } from "react-icons/fa";
 import { IoMdHeart } from "react-icons/io";
-import {
-  Button,
-  Card,
-  CardBody,
-  CardGroup,
-  CardImg,
-  CardText,
-  CardTitle,
-  Col,
-} from "reactstrap";
 import Trailer from "./Trailer";
 export default class Movies extends Component {
   render() {
-    let movies = this.props.movies;
+    let Allmovies = this.props.Allmovies;
     let fav = this.props.fav;
-    let statu = this.props.statu;
-    if (statu) {
+    let Catmovies = this.props.Catmovies;
+    let movies;
+    if (this.props.currentCategory === "") {
+      movies = Allmovies;
+    } else if (this.props.currentCategory === "Favoriler") {
       movies = fav;
+    } else {
+      movies = Catmovies;
     }
     return (
       <div>
