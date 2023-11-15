@@ -15,6 +15,7 @@ export default class App extends Component {
   componentDidMount() {
     this.getMovies();
   }
+
   getMovies = () => {
     let url = "http://localhost:3000/movies";
     fetch(url)
