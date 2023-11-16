@@ -1,20 +1,14 @@
 import React, { Component } from "react";
+import "../App.css";
 import logo from "../logo.png";
 
 class Categories extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      opacity: "0",
-    };
-  }
   handleCategoryClick = (kategoriId) => {
     this.props.onCategorySelect(kategoriId);
   };
-  showCart = () => {
-    this.setState({ opacity: "1" });
-  };
+
   render() {
+    const carts = this.props.cartList;
     return (
       <div>
         <div className="container-fluid bg-dark fh5co_padd_mediya padding_786">
@@ -49,35 +43,25 @@ class Categories extends Component {
                       </button>
                     </li>
                   ))}
-                  <button
-                    onClick={() => this.showCart()}
-                    style={{
-                      zIndex: "11",
-                      width: "20%",
-                      textAlign: "center",
-                      color: "black",
-                      backgroundColor: "transparent",
-                    }}
-                    className="col-4 col-md-3"
-                  >
+                  <div className="toggleCart">
                     <i class="fa fa-shopping-basket" aria-hidden="true"></i>{" "}
-                  </button>
+                    <ul className="nav-item toggledList" key="111">
+                      {carts.map((cart) => (
+                        <li>
+                          <strong>{cart.baslik}</strong>
+                          <img
+                            style={{
+                              textAlign: "center",
+                            }}
+                            src={cart.resim}
+                            width="40"
+                          />
+                          <strong>{cart.fiyat} ₺</strong>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </ul>
-                <li
-                  style={{
-                    position: "fixed",
-                    opacity: this.state.opacity,
-                    right: "0px",
-                    zIndex: "11",
-                    width: "20%",
-                    textAlign: "center",
-                    backgroundColor: "red",
-                  }}
-                  className="nav-item"
-                  key="111"
-                >
-                  {this.props.cartList}
-                </li>
               </div>
             </nav>
           </div>
