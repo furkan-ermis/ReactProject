@@ -12,7 +12,41 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.toggleCart {
+  position: relative;
+  z-index: 11;
+  padding-left: 20px;
+  text-align: center;
+  font-size: 17px;
+  color: rgb(223, 28, 28);
+  background-color: transparent;
+}
+.toggleCart ul {
+  display: none;
+  background-color: #51565f !important;
+  position: absolute;
+  font-size: 14px !important;
+  top: 30px;
+  left: -20px;
+  width: 500px;
+  z-index: 11;
+  text-align: center;
+}
+.toggleCart ul li {
+  text-decoration: none;
+  list-style: none;
+  padding: 15px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  background-color: white;
+}
+.toggleCart ul li:hover {
+  background-color: #51565f !important;
+}
+.toggleCart:hover ul {
+  display: block !important;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
