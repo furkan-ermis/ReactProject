@@ -68,7 +68,7 @@ class Cards extends Component {
               En Çok Satın Alınanlar
             </div>
           </div>
-          <Popular />
+          <Popular onCardClick={this.props.onCardClick} />
         </div>
         <div
           className=" animate-box text-white"
@@ -77,7 +77,11 @@ class Cards extends Component {
         >
           <div className="row text-white">
             {cards.map((card, index) => (
-              <div key={index} className="col-md-2">
+              <div
+                key={index}
+                onClick={() => this.props.onCardClick(card)}
+                className="col-md-2"
+              >
                 <div className="pb-4">
                   <div className="col-md-12">
                     <div className="fh5co_hover_news_img">
@@ -123,11 +127,12 @@ class Cards extends Component {
           className="col-md-12 animate-box"
           data-animate-effect="fadeInRight"
         ></div>
-        {this.props.selectedBlog && (
+        {this.props.selectedCard && (
           <CardsModal
-            blog={this.props.selectedBlog}
+            card={this.props.selectedCard}
             onClose={this.props.onClose}
             showModal={this.props.showModal}
+            cards={this.state.cards}
           />
         )}
       </div>

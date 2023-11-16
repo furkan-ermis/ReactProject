@@ -1,6 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 
 const CardsModal = ({ card, onClose, showModal }) => {
+  const [favorited, setFavorited] = useState(false);
+
+  const handleFavoriteClick = () => {
+    const updatedData = {
+      kategoriId: card.kategoriId,
+      baslik: card.baslik,
+      aciklama: card.aciklama,
+      resim: card.resim,
+      favoriSayisi: card.favoriSayisi + 1,
+      banner: card.banner,
+      date: card.date,
+      tag: card.tag,
+    };
+
+    fetch(`http://localhost:3000/urunler/${card.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updatedData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Favori eklendi:", data);
+        setFavorited(true);
+      })
+      .catch((error) => console.error("Favori ekleme hatası:", error));
+  };
+
   return (
     <div
       className={`modal fade ${showModal ? "show" : ""}`}
@@ -29,6 +58,22 @@ const CardsModal = ({ card, onClose, showModal }) => {
               <img src={card.resim} alt={card.baslik} className="img-fluid" />
             )}
             <p>{card.aciklama}</p>
+            <div className="fh5co_consectetur">
+              <i className="fa fa-heart-o"></i> {card.favoriSayisi}
+            </div>
+
+            <div className="fh5co_consectetur">
+              <i className="fa fa-clock-o"></i> {card.date}
+            </div>
+            {!favorited && (
+              <button
+                type="button"
+                className="btn btn-primary"
+                onClick={handleFavoriteClick}
+              >
+                Favoriye Ekle
+              </button>
+            )}
           </div>
           <div className="modal-footer">
             <button

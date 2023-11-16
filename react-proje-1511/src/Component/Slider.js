@@ -30,6 +30,7 @@ function Slider(props) {
         className="custom-tag"
         tag="div"
         key={item.id}
+        onClick={() => this.props.onCardClick(item)}
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
       >

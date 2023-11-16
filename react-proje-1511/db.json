@@ -1,4 +1,3 @@
-
 {
   "kategoriler": [
     {
@@ -44,68 +43,64 @@
       "date": "2023-01-01"
     },
     {
-      "id": 2,
       "kategoriId": 2,
       "baslik": "Bilim Kitap Seti",
       "aciklama": "Bilimsel keşiflere dair en iyi kitaplar. Evrim teorisi, fizik, biyoloji ve daha fazlasını içerir.",
       "resim": "https://picsum.photos/810/600",
-      "favoriSayisi": 10,
-      "fiyat": 129.99,
+      "favoriSayisi": 11,
+      "banner": 1,
+      "date": "2023-01-02",
       "tag": [
         "bilim",
         "kitap",
         "evrim"
       ],
-      "banner": 1,
-      "date": "2023-01-02"
+      "id": 2
     },
     {
-      "id": 3,
       "kategoriId": 3,
       "baslik": "Sanat Eseri Reproduksiyonu",
       "aciklama": "Ünlü bir sanat eserinin yüksek kaliteli reproduksiyonu. Modern sanatın eşsiz atmosferini evinize taşıyın.",
       "resim": "https://picsum.photos/801/600",
-      "favoriSayisi": 20,
-      "fiyat": 299.99,
+      "favoriSayisi": 30,
+      "banner": 0,
+      "date": "2023-01-03",
       "tag": [
         "sanat",
         "reproduksiyon",
         "çağdaş sanat"
       ],
-      "banner": 0,
-      "date": "2023-01-03"
+      "id": 3
     },
     {
-      "id": 4,
       "kategoriId": 4,
       "baslik": "Sporcu Ayakkabı",
       "aciklama": "Yüksek performanslı spor ayakkabısı. Rahat, hafif ve dayanıklıdır. Her türlü spor için uygundur.",
       "resim": "https://picsum.photos/802/600",
-      "favoriSayisi": 18,
-      "fiyat": 129.99,
+      "favoriSayisi": 25,
+      "banner": 0,
+      "date": "2023-01-04",
       "tag": [
         "spor",
         "ayakkabı",
         "egzersiz"
       ],
-      "banner": 0,
-      "date": "2023-01-04"
+      "id": 4
     },
     {
-      "id": 5,
       "kategoriId": 5,
       "baslik": "Bluetooth Kulaklık",
       "aciklama": "Kablosuz bluetooth kulaklık. Üstün ses kalitesi ve uzun pil ömrü ile müzik keyfini doruklara çıkarın.",
       "resim": "https://picsum.photos/803/600",
-      "favoriSayisi": 22,
-      "fiyat": 79.99,
+      "favoriSayisi": 23,
+      "banner": 1,
+      "date": "2023-01-05",
       "tag": [
         "müzik",
         "kulaklık",
         "teknoloji"
       ],
-      "banner": 1,
-      "date": "2023-01-05"
+      "id": 5
     },
     {
       "id": 6,
@@ -188,20 +183,19 @@
       "date": "2023-01-10"
     },
     {
-      "id": 11,
       "kategoriId": 5,
       "baslik": "Kulak Üstü Kulaklık",
       "aciklama": "Profesyonel ses deneyimi. Stüdyo kalitesinde ses ve rahat tasarım ile müzik dinlemenin keyfini çıkarın.",
       "resim": "https://picsum.photos/800/603",
-      "favoriSayisi": 35,
-      "fiyat": 129.99,
+      "favoriSayisi": 36,
+      "banner": 1,
+      "date": "2023-01-11",
       "tag": [
         "müzik",
         "kulaklık",
         "ses ekipmanları"
       ],
-      "banner": 1,
-      "date": "2023-01-11"
+      "id": 11
     },
     {
       "id": 12,
@@ -235,166 +229,165 @@
       "banner": 0,
       "date": "2023-01-13"
     },
-   
-  {
-    "id": 14,
-    "kategoriId": 1,
-    "baslik": "Mechanical Klavye",
-    "aciklama": "RGB aydınlatmalı mekanik klavye. Hassas tuş tepkileri ile oyun deneyiminizi zirveye taşıyın.",
-    "resim": "https://picsum.photos/808/600",
-    "favoriSayisi": 25,
-    "fiyat": 129.99,
-    "tag": [
-      "teknoloji",
-      "klavye",
-      "oyun"
-    ],
-    "banner": 0,
-    "date": "2023-02-01"
-  },
-  {
-    "id": 15,
-    "kategoriId": 2,
-    "baslik": "Bluetooth Kulaklık",
-    "aciklama": "Kablosuz bağlantı özelliği ile özgürlüğün tadını çıkarın. Yüksek ses kalitesi ile müziğin keyfini çıkarın.",
-    "resim": "https://picsum.photos/808/600",
-    "favoriSayisi": 30,
-    "fiyat": 89.99,
-    "tag": [
-      "teknoloji",
-      "kulaklık",
-      "müzik"
-    ],
-    "banner": 0,
-    "date": "2023-02-15"
-  },
-  {
-    "id": 16,
-    "kategoriId": 1,
-    "baslik": "Gaming Mouse Pad",
-    "aciklama": "Yüksek hassasiyetli gaming mouse pad. Oyun performansınızı artırmak için ideal.",
-    "resim": "https://picsum.photos/808/600",
-    "favoriSayisi": 15,
-    "fiyat": 19.99,
-    "tag": [
-      "teknoloji",
-      "oyun",
-      "fare"
-    ],
-    "banner": 0,
-    "date": "2023-03-03"
-  },
-  {
-    "id": 17,
-    "kategoriId": 3,
-    "baslik": "Akıllı Telefon",
-    "aciklama": "Gelişmiş kamera özellikleri ve yüksek performans. Akıllı telefon deneyimini başka bir seviyeye taşıyın.",
-    "resim": "https://picsum.photos/808/600",
-    "favoriSayisi": 40,
-    "fiyat": 699.99,
-    "tag": [
-      "teknoloji",
-      "telefon",
-      "akıllı cihaz"
-    ],
-    "banner": 0,
-    "date": "2023-03-20"
-  },
-  {
-    "id": 18,
-    "kategoriId": 2,
-    "baslik": "Taşınabilir Şarj Cihazı",
-    "aciklama": "Hafif ve kompakt tasarımıyla her yerde kullanabileceğiniz taşınabilir şarj cihazı.",
-    "resim": "https://picsum.photos/808/600",
-    "favoriSayisi": 18,
-    "fiyat": 39.99,
-    "tag": [
-      "teknoloji",
-      "şarj",
-      "cep telefonu"
-    ],
-    "banner": 0,
-    "date": "2023-04-05"
-  },
-  {
-    "id": 19,
-    "kategoriId": 1,
-    "baslik": "Ultra İnce Laptop",
-    "aciklama": "Taşınabilirlik ve güç bir arada. Ultra ince tasarımıyla her yere rahatlıkla taşıyabilirsiniz.",
-    "resim": "https://picsum.photos/808/600",
-    "favoriSayisi": 22,
-    "fiyat": 899.99,
-    "tag": [
-      "teknoloji",
-      "bilgisayar",
-      "laptop"
-    ],
-    "banner": 0,
-    "date": "2023-04-18"
-  },
-  {
-    "id": 20,
-    "kategoriId": 3,
-    "baslik": "4K UHD Televizyon",
-    "aciklama": "Kristal netliğinde görüntü kalitesi ile ev sineması keyfini yaşayın.",
-    "resim": "https://picsum.photos/808/600",
-    "favoriSayisi": 35,
-    "fiyat": 1499.99,
-    "tag": [
-      "teknoloji",
-      "televizyon",
-      "ev sineması"
-    ],
-    "banner": 0,
-    "date": "2023-05-02"
-  },
-  {
-    "id": 21,
-    "kategoriId": 2,
-    "baslik": "Akıllı Saat",
-    "aciklama": "Sağlık takibi ve günlük aktivitelerinizi kontrol etmek için akıllı saat.",
-    "resim": "https://picsum.photos/808/600",
-    "favoriSayisi": 28,
-    "fiyat": 129.99,
-    "tag": [
-      "teknoloji",
-      "akıllı saat",
-      "sağlık"
-    ],
-    "banner": 0,
-    "date": "2023-05-15"
-  },
-  {
-    "id": 22,
-    "kategoriId": 1,
-    "baslik": "Wi-Fi Router",
-    "aciklama": "Yüksek hızda ve güvenilir Wi-Fi bağlantısı için özel tasarlanmış router.",
-    "resim": "https://picsum.photos/808/600",
-    "favoriSayisi": 17,
-    "fiyat": 79.99,
-    "tag": [
-      "teknoloji",
-      "internet",
-      "router"
-    ],
-    "banner": 0,
-    "date": "2023-06-01"
-  },
-  {
-    "id": 23,
-    "kategoriId": 3,
-    "baslik": "OLED Monitör",
-    "aciklama": "Yüksek çözünürlükte ve kontrastta görüntü kalitesi sunan OLED monitör.",
-    "resim": "https://picsum.photos/808/600",
-    "favoriSayisi": 23,
-    "fiyat": 499.99,
-    "tag": [
-      "teknoloji",
-      "monitör",
-      "bilgisayar"
-    ],
-    "banner":0,
-    "date": "2023-06-01"
-  }
+    {
+      "id": 14,
+      "kategoriId": 1,
+      "baslik": "Mechanical Klavye",
+      "aciklama": "RGB aydınlatmalı mekanik klavye. Hassas tuş tepkileri ile oyun deneyiminizi zirveye taşıyın.",
+      "resim": "https://picsum.photos/808/600",
+      "favoriSayisi": 25,
+      "fiyat": 129.99,
+      "tag": [
+        "teknoloji",
+        "klavye",
+        "oyun"
+      ],
+      "banner": 0,
+      "date": "2023-02-01"
+    },
+    {
+      "id": 15,
+      "kategoriId": 2,
+      "baslik": "Bluetooth Kulaklık",
+      "aciklama": "Kablosuz bağlantı özelliği ile özgürlüğün tadını çıkarın. Yüksek ses kalitesi ile müziğin keyfini çıkarın.",
+      "resim": "https://picsum.photos/808/600",
+      "favoriSayisi": 30,
+      "fiyat": 89.99,
+      "tag": [
+        "teknoloji",
+        "kulaklık",
+        "müzik"
+      ],
+      "banner": 0,
+      "date": "2023-02-15"
+    },
+    {
+      "id": 16,
+      "kategoriId": 1,
+      "baslik": "Gaming Mouse Pad",
+      "aciklama": "Yüksek hassasiyetli gaming mouse pad. Oyun performansınızı artırmak için ideal.",
+      "resim": "https://picsum.photos/808/600",
+      "favoriSayisi": 15,
+      "fiyat": 19.99,
+      "tag": [
+        "teknoloji",
+        "oyun",
+        "fare"
+      ],
+      "banner": 0,
+      "date": "2023-03-03"
+    },
+    {
+      "id": 17,
+      "kategoriId": 3,
+      "baslik": "Akıllı Telefon",
+      "aciklama": "Gelişmiş kamera özellikleri ve yüksek performans. Akıllı telefon deneyimini başka bir seviyeye taşıyın.",
+      "resim": "https://picsum.photos/808/600",
+      "favoriSayisi": 40,
+      "fiyat": 699.99,
+      "tag": [
+        "teknoloji",
+        "telefon",
+        "akıllı cihaz"
+      ],
+      "banner": 0,
+      "date": "2023-03-20"
+    },
+    {
+      "id": 18,
+      "kategoriId": 2,
+      "baslik": "Taşınabilir Şarj Cihazı",
+      "aciklama": "Hafif ve kompakt tasarımıyla her yerde kullanabileceğiniz taşınabilir şarj cihazı.",
+      "resim": "https://picsum.photos/808/600",
+      "favoriSayisi": 18,
+      "fiyat": 39.99,
+      "tag": [
+        "teknoloji",
+        "şarj",
+        "cep telefonu"
+      ],
+      "banner": 0,
+      "date": "2023-04-05"
+    },
+    {
+      "id": 19,
+      "kategoriId": 1,
+      "baslik": "Ultra İnce Laptop",
+      "aciklama": "Taşınabilirlik ve güç bir arada. Ultra ince tasarımıyla her yere rahatlıkla taşıyabilirsiniz.",
+      "resim": "https://picsum.photos/808/600",
+      "favoriSayisi": 22,
+      "fiyat": 899.99,
+      "tag": [
+        "teknoloji",
+        "bilgisayar",
+        "laptop"
+      ],
+      "banner": 0,
+      "date": "2023-04-18"
+    },
+    {
+      "id": 20,
+      "kategoriId": 3,
+      "baslik": "4K UHD Televizyon",
+      "aciklama": "Kristal netliğinde görüntü kalitesi ile ev sineması keyfini yaşayın.",
+      "resim": "https://picsum.photos/808/600",
+      "favoriSayisi": 35,
+      "fiyat": 1499.99,
+      "tag": [
+        "teknoloji",
+        "televizyon",
+        "ev sineması"
+      ],
+      "banner": 0,
+      "date": "2023-05-02"
+    },
+    {
+      "id": 21,
+      "kategoriId": 2,
+      "baslik": "Akıllı Saat",
+      "aciklama": "Sağlık takibi ve günlük aktivitelerinizi kontrol etmek için akıllı saat.",
+      "resim": "https://picsum.photos/808/600",
+      "favoriSayisi": 28,
+      "fiyat": 129.99,
+      "tag": [
+        "teknoloji",
+        "akıllı saat",
+        "sağlık"
+      ],
+      "banner": 0,
+      "date": "2023-05-15"
+    },
+    {
+      "id": 22,
+      "kategoriId": 1,
+      "baslik": "Wi-Fi Router",
+      "aciklama": "Yüksek hızda ve güvenilir Wi-Fi bağlantısı için özel tasarlanmış router.",
+      "resim": "https://picsum.photos/808/600",
+      "favoriSayisi": 17,
+      "fiyat": 79.99,
+      "tag": [
+        "teknoloji",
+        "internet",
+        "router"
+      ],
+      "banner": 0,
+      "date": "2023-06-01"
+    },
+    {
+      "id": 23,
+      "kategoriId": 3,
+      "baslik": "OLED Monitör",
+      "aciklama": "Yüksek çözünürlükte ve kontrastta görüntü kalitesi sunan OLED monitör.",
+      "resim": "https://picsum.photos/808/600",
+      "favoriSayisi": 23,
+      "fiyat": 499.99,
+      "tag": [
+        "teknoloji",
+        "monitör",
+        "bilgisayar"
+      ],
+      "banner": 0,
+      "date": "2023-06-01"
+    }
   ]
 }

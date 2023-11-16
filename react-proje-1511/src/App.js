@@ -11,6 +11,7 @@ class App extends Component {
       selectedCategoryId: null,
       selectedCard: null,
       cartList: [],
+      showModal: false,
     };
   }
   handleCategorySelect = (selectedCategoryId) => {
@@ -21,7 +22,13 @@ class App extends Component {
       cartList: [...prevState.cartList, item],
     }));
   };
+  openModal = (card) => {
+    this.setState({ selectedCard: card, showModal: true });
+  };
 
+  closeModal = () => {
+    this.setState({ selectedCard: null, showModal: false });
+  };
   render() {
     return (
       <div>
@@ -29,8 +36,11 @@ class App extends Component {
           cartList={this.state.cartList}
           onCategorySelect={this.handleCategorySelect}
         />
-        <Slider1 />
+        <Slider1 onCardClick={this.openModal} />
         <Cards
+          onCardClick={this.openModal}
+          showModal={this.state.showModal}
+          onClose={this.closeModal}
           addToCart={this.addToCart}
           selectedCategory={this.state.selectedCategoryId}
           selectedCard={this.state.selectedCard}
