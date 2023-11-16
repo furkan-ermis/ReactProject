@@ -2,10 +2,18 @@ import React, { Component } from "react";
 import logo from "../logo.png";
 
 class Categories extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      opacity: "0",
+    };
+  }
   handleCategoryClick = (kategoriId) => {
     this.props.onCategorySelect(kategoriId);
   };
-
+  showCart = () => {
+    this.setState({ opacity: "1" });
+  };
   render() {
     return (
       <div>
@@ -41,7 +49,35 @@ class Categories extends Component {
                       </button>
                     </li>
                   ))}
+                  <button
+                    onClick={() => this.showCart()}
+                    style={{
+                      zIndex: "11",
+                      width: "20%",
+                      textAlign: "center",
+                      color: "black",
+                      backgroundColor: "transparent",
+                    }}
+                    className="col-4 col-md-3"
+                  >
+                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>{" "}
+                  </button>
                 </ul>
+                <li
+                  style={{
+                    position: "fixed",
+                    opacity: this.state.opacity,
+                    right: "0px",
+                    zIndex: "11",
+                    width: "20%",
+                    textAlign: "center",
+                    backgroundColor: "red",
+                  }}
+                  className="nav-item"
+                  key="111"
+                >
+                  {this.props.cartList}
+                </li>
               </div>
             </nav>
           </div>

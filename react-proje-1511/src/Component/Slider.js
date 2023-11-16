@@ -33,12 +33,7 @@ function Slider(props) {
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
       >
-        <img
-          src={item.resim}
-          onClick={() => props.onBlogClick(item)}
-          width="100%"
-          alt={item.baslik}
-        />
+        <img src={item.resim} width="100%" alt={item.baslik} />
         <CarouselCaption
           className="text-white bg-secondary"
           captionText={item.fiyat}

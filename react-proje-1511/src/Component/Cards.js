@@ -68,7 +68,7 @@ class Cards extends Component {
               En Çok Satın Alınanlar
             </div>
           </div>
-          <Popular onCardClick={this.props.onCardClick} />
+          <Popular />
         </div>
         <div
           className=" animate-box text-white"
@@ -78,10 +78,7 @@ class Cards extends Component {
           <div className="row text-white">
             {cards.map((card, index) => (
               <div key={index} className="col-md-2">
-                <div
-                  className="pb-4"
-                  onClick={() => this.props.onCardClick(card)}
-                >
+                <div className="pb-4">
                   <div className="col-md-12">
                     <div className="fh5co_hover_news_img">
                       <div className="fh5co_news_img d-flex">
@@ -102,6 +99,12 @@ class Cards extends Component {
                       <i className="fa fa-heart-o"></i> {card.favoriSayisi}
                     </div>
                     <div className="fh5co_consectetur">{card.fiyat} ₺</div>
+                    <button
+                      className="btn btn-primary"
+                      onClick={() => card && this.props.addToCart(card)}
+                    >
+                      sepete ekle
+                    </button>
                     <div className="fh5co_consectetur">
                       {card.tag.map((tag, index) => (
                         <a key={index} href="test" className="fh5co_tagg">

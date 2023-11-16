@@ -25,15 +25,16 @@ class Header extends Component {
         <div style={{ backgroundColor: "#212529", margin: "0", padding: "0" }}>
           <div>
             <div className="row">
-              <div className="col-12 col-md-3">
+              <div className="col-4 col-md-3">
                 <img src={logo} alt="img" className="fh5co_logo_width" />
               </div>
-              <div className="col-12 col-md-9 align-self-center ">
+              <div className="col-4 col-md-9 align-self-center ">
                 <Categories
+                  cartList={this.props.cartList}
                   Kategoriler={this.state.kategorilerData}
                   onCategorySelect={this.props.onCategorySelect}
                 />
-              </div>
+              </div>{" "}
             </div>
           </div>
         </div>
