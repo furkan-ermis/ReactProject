@@ -3,6 +3,7 @@ import { Container, Row } from "reactstrap";
 import Categories from "./Components/Categories";
 import Header from "./Components/Header";
 import Movies from "./Components/Movies";
+import Rating from "./Rate/Rating";
 import "./site.css";
 export default class App extends Component {
   state = {
@@ -69,6 +70,7 @@ export default class App extends Component {
               changeCategory={this.changeCategory}
               currentCategory={this.state.currentCategory}
             />
+            <Rating />
             <Movies
               addToFav={this.addToFav}
               removeToFav={this.removeToFav}

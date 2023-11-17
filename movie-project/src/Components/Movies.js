@@ -1,8 +1,16 @@
 import React, { Component } from "react";
 import { FaRegHeart } from "react-icons/fa";
 import { IoMdHeart } from "react-icons/io";
+import Rate from "../Rate/rate.js";
 import Trailer from "./Trailer";
 export default class Movies extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      rating: 0,
+    };
+  }
   render() {
     let Allmovies = this.props.Allmovies;
     let fav = this.props.fav;
@@ -38,6 +46,12 @@ export default class Movies extends Component {
                 <div className="cardText">
                   <small className="text-muted">{movie.price} ₺</small>
                 </div>
+                <Rate
+                  rating={this.state.rating}
+                  onRating={(rate) => this.setState({ rating: rate })}
+                />
+                {this.state.rating && (movie.rating = this.state.rating)}
+                <p>{this.state.rating}</p>
                 {movie.isFavorite ? (
                   <button
                     className="btn btn-outline-danger"
