@@ -1,339 +1,428 @@
-
 {
   "movies": [
     {
       "id": 1,
-      "isFavorite":false,
+      "isFavorite": false,
       "categoryId": 2,
       "movieName": "Inception",
       "image": "images/inception.jpg",
       "desc": "A mind-bending thriller directed by Christopher Nolan.",
-      "trailer":"8hP9D6kZseM?si=iIrd7_WGqTPr1PmZ",
-      "rating":0 ,"price": 18
+      "trailer": "8hP9D6kZseM?si=iIrd7_WGqTPr1PmZ",
+      "rateCount": 6,
+      "rating": 3.1666666666666665,
+      "movie": "https://my.mail.ru/video/embed/9197363450076989882",
+      "comment": []
     },
     {
       "id": 2,
-      "isFavorite":false,
+      "isFavorite": false,
       "categoryId": 1,
       "movieName": "The Shawshank Redemption",
       "image": "images/shawshank.jpg",
       "desc": "A powerful drama based on Stephen King's novella.",
-      "trailer":"PLl99DlL6b4?si=DozkQUiY7fcCznT4",
-      "rating":0 ,"price": 19
+      "trailer": "PLl99DlL6b4?si=DozkQUiY7fcCznT4",
+      "rateCount": 6,
+      "rating": 3.3333333333333335,
+      "movie": "",
+      "comment": []
     },
     {
       "id": 3,
-      "isFavorite":false,
+      "isFavorite": false,
       "categoryId": 1,
       "movieName": "The Godfather",
       "image": "images/godfather.jpg",
       "desc": "An epic crime film directed by Francis Ford Coppola.",
-      "trailer":"UaVTIH8mujA?si=v0_GNYRLkBIqS76u",
-      "rating":0 ,"price": 22
+      "trailer": "UaVTIH8mujA?si=v0_GNYRLkBIqS76u",
+      "rateCount": 15,
+      "rating": 3.2666666666666666,
+      "movie": "",
+      "comment": []
     },
     {
       "id": 4,
-      "isFavorite":false,
+      "isFavorite": false,
       "categoryId": 2,
       "movieName": "Interstellar",
       "image": "images/interstellar.jpg",
       "desc": "A space exploration film directed by Christopher Nolan.",
-      "trailer":"vVJeYMRam0o?si=rb30dYNM5wtRZyPR",
-      "rating":0 ,"price": 21.35
+      "trailer": "vVJeYMRam0o?si=rb30dYNM5wtRZyPR",
+      "rateCount": 4,
+      "rating": 3.25,
+      "movie": "",
+      "comment": []
     },
     {
       "id": 5,
-      "isFavorite":false,
+      "isFavorite": false,
       "categoryId": 2,
       "movieName": "The Dark Knight",
       "image": "images/darkknight.jpg",
       "desc": "A superhero film directed by Christopher Nolan.",
-      "trailer":"EXeTwQWrcwY?si=yxR3IIQVcPuzXjxg",
-      "rating":0 ,"price": 25
+      "trailer": "EXeTwQWrcwY?si=yxR3IIQVcPuzXjxg",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
     },
     {
       "id": 6,
-      "isFavorite":false,
+      "isFavorite": false,
       "categoryId": 7,
       "movieName": "Forrest Gump",
       "image": "images/forrestgump.jpg",
       "desc": "A heartwarming drama directed by Robert Zemeckis.",
-      "trailer":"bLvqoHBptjg?si=WPgIgzivO_sq9lq5",
-      "rating":0 ,"price": 30
+      "trailer": "bLvqoHBptjg?si=WPgIgzivO_sq9lq5",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
     },
     {
       "id": 7,
-      "isFavorite":false,
+      "isFavorite": false,
       "categoryId": 2,
       "movieName": "Pulp Fiction",
       "image": "images/pulpfiction.jpg",
       "desc": "A nonlinear crime film directed by Quentin Tarantino.",
-      "trailer":"s7EdQ4FqbhY?si=HzEt27BXoKzOY16X",
-      "rating":0 ,"price": 40
+      "trailer": "s7EdQ4FqbhY?si=HzEt27BXoKzOY16X",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
     },
     {
       "id": 8,
-      "isFavorite":false,
+      "isFavorite": false,
       "categoryId": 6,
       "movieName": "The Shawshank Redemption",
       "image": "images/shawshank.jpg",
       "desc": "A nonlinear crime film directed by Quentin Tarantino.",
-      "trailer":"PLl99DlL6b4?si=DozkQUiY7fcCznT4",
-      "rating":0 ,"price": 40
+      "trailer": "PLl99DlL6b4?si=DozkQUiY7fcCznT4",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
     },
     {
       "id": 9,
-      "isFavorite":false,
+      "isFavorite": false,
       "categoryId": 6,
       "movieName": "The Matrix",
       "image": "images/matrix.jpg",
       "desc": "A sci-fi action film directed by the Wachowskis.",
-      "trailer":"m8e-FF8MsqU?si=qob6Gb3AEvZAiHTP",
-      "rating":0 ,"price": 97
+      "trailer": "m8e-FF8MsqU?si=qob6Gb3AEvZAiHTP",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
     },
     {
       "id": 10,
-      "isFavorite":false,
+      "isFavorite": false,
       "categoryId": 8,
       "movieName": "The Lord of the Rings: The Fellowship of the Ring",
       "image": "images/lotr.jpg",
       "desc": "An epic fantasy film directed by Peter Jackson.",
-      "trailer":"V75dMMIW2B4?si=koXqbXj0aa834erT",
-      "rating":0 ,"price": 31
+      "trailer": "V75dMMIW2B4?si=koXqbXj0aa834erT",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
     },
     {
       "id": 11,
-      "isFavorite":false,
+      "isFavorite": false,
       "categoryId": 4,
       "movieName": "Inglourious Basterds",
       "image": "images/inglourious.jpg",
       "desc": "A war film directed by Quentin Tarantino.",
-      "trailer":"KnrRy6kSFF0?si=oQD18EKU21B-AvUL",
-      "rating":0 ,"price": 21
+      "trailer": "KnrRy6kSFF0?si=oQD18EKU21B-AvUL",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
     },
     {
       "id": 12,
-      "isFavorite":false,
+      "isFavorite": false,
       "categoryId": 4,
       "movieName": "The Silence of the Lambs",
       "image": "images/silence.jpg",
       "desc": "A psychological horror film directed by Jonathan Demme.",
-      "trailer":"6iB21hsprAQ?si=WBh8RpSDGpLA0yMk",
-      "rating":0 ,"price": 38
+      "trailer": "6iB21hsprAQ?si=WBh8RpSDGpLA0yMk",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
     },
     {
       "id": 13,
-      "isFavorite":false,
+      "isFavorite": false,
       "categoryId": 8,
       "movieName": "Avatar",
       "image": "images/avatar.jpg",
       "desc": "A science fiction film directed by James Cameron.",
-      "trailer":"5PSNL1qE6VY?si=5bPh8tMGITl3WHev",
-      "rating":0 ,"price": 6
+      "trailer": "5PSNL1qE6VY?si=5bPh8tMGITl3WHev",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
     },
     {
       "id": 14,
-      "isFavorite":false,
+      "isFavorite": false,
       "categoryId": 7,
       "movieName": "The Green Mile",
       "image": "images/greenmile.jpg",
       "desc": "A fantasy drama film directed by Frank Darabont.",
-      "trailer":"Ki4haFrqSrw?si=Gut47X1gqqpRDyTJ",
-      "rating":0 ,"price": 23.25
+      "trailer": "Ki4haFrqSrw?si=Gut47X1gqqpRDyTJ",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
     },
     {
       "id": 15,
-      "isFavorite":false,
+      "isFavorite": false,
       "categoryId": 2,
       "movieName": "The Grand Budapest Hotel",
       "image": "images/grandbudapest.jpg",
       "desc": "A comedy film directed by Wes Anderson.",
-      "trailer":"1Fg5iWmQjwk?si=lEYC8by34n51eN1k",
-      "rating":0 ,"price": 15.5
+      "trailer": "1Fg5iWmQjwk?si=lEYC8by34n51eN1k",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
     },
     {
       "id": 16,
-      "isFavorite":false,
+      "isFavorite": false,
       "categoryId": 3,
       "movieName": "Forrest Gump",
       "image": "images/forrestgump.jpg",
       "desc": "A heartwarming drama directed by Robert Zemeckis.",
-      "trailer":"bLvqoHBptjg?si=OOOQLMEL4qUG2sY3",
-      "rating":0 ,"price": 17.45
+      "trailer": "bLvqoHBptjg?si=OOOQLMEL4qUG2sY3",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
     },
     {
       "id": 17,
-      "isFavorite":false,
+      "isFavorite": false,
       "categoryId": 6,
       "movieName": "The Lion King",
       "image": "images/lionking.jpg",
       "desc": "An animated musical film produced by Walt Disney.",
-      "trailer":"7TavVZMewpY?si=G3d1GqeSnARXRyq_",
-      "rating":0 ,"price": 35
+      "trailer": "7TavVZMewpY?si=G3d1GqeSnARXRyq_",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
     },
     {
       "id": 18,
-      "isFavorite":false,
+      "isFavorite": false,
       "categoryId": 8,
       "movieName": "The Dark Knight Rises",
       "image": "images/darkknightrises.jpg",
       "desc": "A superhero film directed by Christopher Nolan.",
-      "trailer":"g8evyE9TuYk?si=uBd8Bs3yjnm5LieD",
-      "rating":0 ,"price": 62.5
+      "trailer": "g8evyE9TuYk?si=uBd8Bs3yjnm5LieD",
+      "rateCount": 5,
+      "rating": 3.4,
+      "movie": "",
+      "comment": []
     },
     {
       "id": 19,
-      "isFavorite":false,
+      "isFavorite": false,
       "categoryId": 3,
       "movieName": "Titanic",
       "image": "images/titanic.jpg",
       "desc": "A romantic drama film directed by James Cameron.",
-      "trailer":"kVrqfYjkTdQ?si=rraCczd5BX3AHTo-",
-      "rating":0 ,"price": 9.2
+      "trailer": "kVrqfYjkTdQ?si=rraCczd5BX3AHTo-",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
     },
     {
       "id": 20,
-      "isFavorite":false,
+      "isFavorite": false,
       "categoryId": 3,
       "movieName": "Jurassic Park",
       "image": "images/jurassicpark.jpg",
       "desc": "A science fiction adventure film directed by Steven Spielberg.",
-      "trailer":"lc0UehYemQA?si=_H9rRuBHVN3R8lSu",
-      "rating":0 ,"price": 81
+      "trailer": "lc0UehYemQA?si=_H9rRuBHVN3R8lSu",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
     },
     {
       "id": 21,
-      "isFavorite":false,
+      "isFavorite": false,
       "categoryId": 3,
       "movieName": "The Breakfast Club",
       "image": "images/breakfastclub.jpg",
       "desc": "A teen comedy-drama film directed by John Hughes.",
-      "trailer":"BSXBvor47Zs?si=6DKXH7JnKjA0Bx7d",
-      "rating":0 ,"price": 10
+      "trailer": "BSXBvor47Zs?si=6DKXH7JnKjA0Bx7d",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
     },
     {
       "id": 22,
-      "isFavorite":false,
+      "isFavorite": false,
       "categoryId": 5,
       "movieName": "Inception",
       "image": "images/inception.jpg",
       "desc": "A mind-bending thriller directed by Christopher Nolan.",
-      "trailer":"8hP9D6kZseM?si=iIrd7_WGqTPr1PmZ",
-      "rating":0 ,"price": 21
+      "trailer": "8hP9D6kZseM?si=iIrd7_WGqTPr1PmZ",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
     },
     {
       "id": 23,
-      "isFavorite":false,
+      "isFavorite": false,
       "categoryId": 5,
       "movieName": "The Social Network",
       "image": "images/socialnetwork.jpg",
       "desc": "A biographical drama film directed by David Fincher.",
-      "trailer":"lB95KLmpLR4?si=4XaNNJpyZYe7PgZU",
-      "rating":0 ,"price": 9
+      "trailer": "lB95KLmpLR4?si=4XaNNJpyZYe7PgZU",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
     },
     {
       "id": 24,
-      "isFavorite":false,
+      "isFavorite": false,
       "categoryId": 1,
       "movieName": "Avengers: Endgame",
       "image": "images/endgame.jpg",
       "desc": "A superhero film directed by Anthony and Joe Russo.",
-      "trailer":"TcMBFSGVi1c?si=p_bvef5a9EDFLf73",
-      "rating":0 ,"price": 25.89
+      "trailer": "TcMBFSGVi1c?si=p_bvef5a9EDFLf73",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
     },
-{
-  "id": 25,
-  "isFavorite":false,
-  "categoryId": 3,
-  "movieName": "The Revenant",
-  "image": "images/revenant.jpg",
-  "desc": "A survival drama film directed by Alejandro G. Iñárritu.",
-      "trailer":"LoebZZ8K5N0?si=AYxhyAihAzjVDeBD",
-      "rating":0 ,"price": 14
-  },
-  {
-  "id": 26,
-  "isFavorite":false,
-  "categoryId": 3,
-  "movieName": "La La Land",
-  "image": "images/lalaland.jpg",
-  "desc": "A romantic musical film directed by Damien Chazelle.",
-      "trailer":"0pdqf4P9MB8?si=L3abGLAlK1vsGPBS",
-      "rating":0 ,"price": 31.23
-  },
-  {
-  "id": 27,
-  "isFavorite":false,
-  "categoryId": 3,
-  "movieName": "The Shape of Water",
-  "image": "images/shapeofwater.jpg",
-  "desc": "A fantasy drama film directed by Guillermo del Toro.",
-      "trailer":"XFYWazblaUA?si=5VT2OGgR36rgiwCn",
-      "rating":0 ,"price": 43.9
-  },
-  {
-  "id": 28,
-  "isFavorite":false,
-  "categoryId": 7,
-  "movieName": "The Martian",
-  "image": "images/martian.jpg",
-  "desc": "A science fiction film directed by Ridley Scott.",
-      "trailer":"ej3ioOneTy8?si=XfDEWJZu8NUYNiQC",
-      "rating":0 ,"price": 45.6
-  },
-  {
-  "id": 29,
-  "isFavorite":false,
-  "categoryId": 6,
-  "movieName": "Mad Max: Fury Road",
-  "image": "images/madmax.jpg",
-  "desc": "A post-apocalyptic action film directed by George Miller.",
-      "trailer":"hEJnMQG9ev8?si=JKgMAX4k129Mxtr1",
-      "rating":0 ,"price": 123.79
-  },
-  {
-  "id": 30,
-  "isFavorite":false,
-  "categoryId": 8,
-  "movieName": "Black Panther",
-  "image": "images/blackpanther.jpg",
-  "desc": "A superhero film directed by Ryan Coogler.",
-      "trailer":"xjDjIWPwcPU?si=s5FSs5QvgT-ApyIP",
-      "rating":0 ,"price": 25.89
-  }
+    {
+      "id": 25,
+      "isFavorite": false,
+      "categoryId": 3,
+      "movieName": "The Revenant",
+      "image": "images/revenant.jpg",
+      "desc": "A survival drama film directed by Alejandro G. Iñárritu.",
+      "trailer": "LoebZZ8K5N0?si=AYxhyAihAzjVDeBD",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
+    },
+    {
+      "id": 26,
+      "isFavorite": false,
+      "categoryId": 3,
+      "movieName": "La La Land",
+      "image": "images/lalaland.jpg",
+      "desc": "A romantic musical film directed by Damien Chazelle.",
+      "trailer": "0pdqf4P9MB8?si=L3abGLAlK1vsGPBS",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
+    },
+    {
+      "id": 27,
+      "isFavorite": false,
+      "categoryId": 3,
+      "movieName": "The Shape of Water",
+      "image": "images/shapeofwater.jpg",
+      "desc": "A fantasy drama film directed by Guillermo del Toro.",
+      "trailer": "XFYWazblaUA?si=5VT2OGgR36rgiwCn",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
+    },
+    {
+      "id": 28,
+      "isFavorite": false,
+      "categoryId": 7,
+      "movieName": "The Martian",
+      "image": "images/martian.jpg",
+      "desc": "A science fiction film directed by Ridley Scott.",
+      "trailer": "ej3ioOneTy8?si=XfDEWJZu8NUYNiQC",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
+    },
+    {
+      "id": 29,
+      "isFavorite": false,
+      "categoryId": 6,
+      "movieName": "Mad Max: Fury Road",
+      "image": "images/madmax.jpg",
+      "desc": "A post-apocalyptic action film directed by George Miller.",
+      "trailer": "hEJnMQG9ev8?si=JKgMAX4k129Mxtr1",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
+    },
+    {
+      "id": 30,
+      "isFavorite": false,
+      "categoryId": 8,
+      "movieName": "Black Panther",
+      "image": "images/blackpanther.jpg",
+      "desc": "A superhero film directed by Ryan Coogler.",
+      "trailer": "xjDjIWPwcPU?si=s5FSs5QvgT-ApyIP",
+      "rateCount": 0,
+      "rating": 0,
+      "movie": "",
+      "comment": []
+    }
   ],
   "categories": [
-  {
-  "id": 1,
-  "categoryName": "Action"
-  },
-  {
-  "id": 2,
-  "categoryName": "Drama"
-  },
-  {
-  "id": 3,
-  "categoryName": "Crime"
-  },
-  {
-  "id": 4,
-  "categoryName": "Science Fiction"
-  },
-  {
-  "id": 5,
-  "categoryName": "Comedy"
-  },
-  {
-  "id": 6,
-  "categoryName": "Romance"
-  },
-  {
-  "id": 7,
-  "categoryName": "Fantasy"
-  },
-  {
-  "id": 8,
-  "categoryName": "Thriller"
-  }
+    {
+      "id": 1,
+      "categoryName": "Action"
+    },
+    {
+      "id": 2,
+      "categoryName": "Drama"
+    },
+    {
+      "id": 3,
+      "categoryName": "Crime"
+    },
+    {
+      "id": 4,
+      "categoryName": "Science Fiction"
+    },
+    {
+      "id": 5,
+      "categoryName": "Comedy"
+    },
+    {
+      "id": 6,
+      "categoryName": "Romance"
+    },
+    {
+      "id": 7,
+      "categoryName": "Fantasy"
+    },
+    {
+      "id": 8,
+      "categoryName": "Thriller"
+    }
   ]
-  }
+}

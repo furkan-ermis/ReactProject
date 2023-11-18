@@ -1,83 +1,53 @@
 import React, { Component } from "react";
-import { FaRegHeart } from "react-icons/fa";
-import { IoMdHeart } from "react-icons/io";
-import Rate from "../Rate/rate.js";
-import Trailer from "./Trailer";
+import FavoriteButton from "./FavoriteButton";
+import MovieModal from "./MovieModal";
 export default class Movies extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      rating: 0,
-    };
+  horizontalScroll(event) {
+    const delta = Math.max(
+      -1,
+      Math.min(1, event.nativeEvent.wheelDelta || -event.nativeEvent.detail)
+    );
+    event.currentTarget.scrollLeft -= delta * 250;
   }
   render() {
-    let Allmovies = this.props.Allmovies;
-    let fav = this.props.fav;
-    let Catmovies = this.props.Catmovies;
-    let movies;
-    if (this.props.currentCategory === "") {
-      movies = Allmovies;
-    } else if (this.props.currentCategory === "Favoriler") {
-      movies = fav;
-    } else {
-      movies = Catmovies;
+    let movies = this.props.movies;
+    let favoriteMovies = this.props.favoriteMovies;
+    if (this.props.currentCategory === "Favoriler") {
+      movies = favoriteMovies;
     }
     return (
-      <div>
+      <div className="wrapper-cards">
         <h2>{this.props.currentCategory}</h2>
-        <div className="cards">
-          {movies.map((movie) => (
-            <div className="card" key={movie.id}>
-              <img
-                width="100%"
-                height="100%"
-                src={movie.image}
-                alt={movie.movieName}
-              />
-              <Trailer
-                movie={movie}
-                removeToFav={this.props.removeToFav}
-                addToFav={this.props.addToFav}
-              />
-              <div className="cardBody">
-                <div className="cardTitle">{movie.movieName}</div>
-                <div className="cardText">{movie.desc}</div>
-                <div className="cardText">
-                  <small className="text-muted">{movie.price} ₺</small>
-                </div>
-                <Rate
-                  rating={this.state.rating}
-                  onRating={(rate) => this.setState({ rating: rate })}
+        <div className="above-cards">
+          <div className="cards" onWheel={this.horizontalScroll}>
+            {movies.map((movie) => (
+              <div className="card" key={movie.id}>
+                <img
+                  width="100%"
+                  height="100%"
+                  src={movie.image}
+                  alt={movie.movieName}
                 />
-                {this.state.rating && (movie.rating = this.state.rating)}
-                <p>{this.state.rating}</p>
-                {movie.isFavorite ? (
-                  <button
-                    className="btn btn-outline-danger"
-                    onClick={() => this.props.removeToFav(movie)}
-                  >
-                    Favorilerden Çıkar
-                    <span>
-                      &nbsp; &nbsp;
-                      <IoMdHeart size="18" />
-                    </span>
-                  </button>
-                ) : (
-                  <button
-                    className="btn btn-outline-warning"
-                    onClick={() => this.props.addToFav(movie)}
-                  >
-                    Favorilere Ekle
-                    <span>
-                      &nbsp; &nbsp;
-                      <FaRegHeart size="18" />
-                    </span>
-                  </button>
-                )}
+
+                <div className="cardBody">
+                  <MovieModal
+                    movie={movie}
+                    changeFavorite={this.props.changeFavorite}
+                  />
+                  <div className="cardTitle">{movie.movieName}</div>
+                  <div className="cardText">{movie.desc}</div>
+                  <div className="cardText">
+                    <small className="text-muted">{movie.price} ₺</small>
+                  </div>
+
+                  <FavoriteButton
+                    movie={movie}
+                    changeFavorite={this.props.changeFavorite}
+                  />
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
         {/* <iframe
           width="560"

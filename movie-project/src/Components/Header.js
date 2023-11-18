@@ -1,16 +1,6 @@
 import React from "react";
 import { IoMdHeart } from "react-icons/io";
-
-import {
-  Button,
-  Collapse,
-  Nav,
-  NavItem,
-  NavLink,
-  Navbar,
-  NavbarBrand,
-  NavbarToggler,
-} from "reactstrap";
+import { Button, Collapse, Nav, Navbar, NavbarToggler } from "reactstrap";
 import Logo from "../logo.png";
 import "../site.css";
 
@@ -28,14 +18,15 @@ export default class Header extends React.Component {
       isOpen: !this.state.isOpen,
     });
   }
+
   render() {
     return (
       <div>
         <Navbar className="header" dark expand="md">
-          <NavbarBrand href="/">
-            {" "}
-            <img src={Logo} alt="Logo" style={{ width: "120px" }} />
-          </NavbarBrand>
+          {" "}
+          <a className="logo" href="/">
+            <img src={Logo} alt="Logo" />
+          </a>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="d-flex justify-content-end w-100" navbar>
@@ -46,24 +37,9 @@ export default class Header extends React.Component {
                 outline
                 style={{ display: "inline", margin: "1px" }}
               >
-                Favoriler &nbsp; &nbsp;
+                Favorite Movies &nbsp; &nbsp;
                 <IoMdHeart size="18" />
-                {/* <FaRegHeart size="18" /> */}
               </Button>
-              <NavItem>
-                <NavLink href="#">
-                  <Button color="warning" outline>
-                    SignUp
-                  </Button>
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/components/">
-                  <Button color="secondary" className="btn-main" outline>
-                    Login
-                  </Button>
-                </NavLink>
-              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
