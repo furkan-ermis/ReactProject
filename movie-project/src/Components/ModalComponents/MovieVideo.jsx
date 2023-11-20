@@ -6,6 +6,7 @@ function MovieVideo({ movie, Path }) {
         width="100%"
         height="500px"
         src={Path}
+        allowFullScreen
       ></iframe>
     </>
   );

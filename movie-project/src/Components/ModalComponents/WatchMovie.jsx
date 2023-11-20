@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 function WatchMovie({ movie, getMovie, isMovie }) {
   return (
@@ -17,7 +17,6 @@ function WatchMovie({ movie, getMovie, isMovie }) {
           className="btn btn-outline-danger p-2"
         >
           Watch Movie
-          <span>&nbsp; &nbsp;</span>
         </button>
       )}
     </>
