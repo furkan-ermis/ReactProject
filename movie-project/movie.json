@@ -171,7 +171,7 @@
     {
       "id": 14,
       "isFavorite": false,
-      "categoryId": 8 ,
+      "categoryId": 8,
       "movieName": "Bird Box",
       "image": "images/birdbox.jpg",
       "desc": "A post-apocalyptic horror film directed by Susanne Bier.",
@@ -201,22 +201,23 @@
       "movieName": "The Whale",
       "image": "images/thewhale.jpg",
       "desc": "A touching story about redemption and forgiveness. Charlie, an English teacher obsessed with the white whale from the classic Moby Dick, attempts to reconcile with his estranged daughter after years of abandonment. Battling obesity, Charlie navigates the challenges of self-acceptance and the pursuit of forgiveness.",
-      "trailer": "w_5RfHkZHWM?si=44ce1JDZRZswFd49", 
+      "trailer": "w_5RfHkZHWM?si=44ce1JDZRZswFd49",
       "rateCount": 0,
       "rating": 0,
-      "movie": "https://my.mail.ru/video/embed/9197363450076989590", 
+      "movie": "https://my.mail.ru/video/embed/9197363450076989590",
       "comment": []
-    },{
+    },
+    {
       "id": 17,
       "isFavorite": false,
       "categoryId": 5,
       "movieName": "Babamın Penguenleri",
       "image": "images/babaminpenguenleri.jpg",
       "desc": "Tom Popper, boşandıktan sonra sıradan bir hayat süren bir iş adamıdır. Ancak, babasından miras kalan altı penguenle tanıştığında hayatı tamamen değişir. ",
-      "trailer": "iu5-70plbUM?si=XszKCHqXMn178dyS", 
+      "trailer": "iu5-70plbUM?si=XszKCHqXMn178dyS",
       "rateCount": 0,
       "rating": 0,
-      "movie": "//ok.ru/videoembed/34635188951", 
+      "movie": "//ok.ru/videoembed/34635188951",
       "comment": []
     },
     {
@@ -226,10 +227,10 @@
       "movieName": "Bay Evet",
       "image": "images/bayevet.jpg",
       "desc": "Jim Carrey, kendi kendine yardım programına yazılan Carl Allen adlı bir adamı canlandırıyor. Program, hayatını değiştirmenin tek bir ilkeye dayandığı basit bir prensibe dayanır: Her şeye 'evet' demek. ",
-      "trailer": "1YTm5YuSHgE?si=kXqho1RVhm-v0Jbh", 
+      "trailer": "1YTm5YuSHgE?si=kXqho1RVhm-v0Jbh",
       "rateCount": 0,
       "rating": 0,
-      "movie": "https://my.mail.ru/video/embed/7470177059621306460", 
+      "movie": "https://my.mail.ru/video/embed/7470177059621306460",
       "comment": []
     }
   ],

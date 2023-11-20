@@ -98,6 +98,7 @@ export default class App extends Component {
       .catch((error) => {
         console.error("Error adding movie:", error);
       });
+    this.setState({ currentCategory: "" });
   };
 
   render() {
