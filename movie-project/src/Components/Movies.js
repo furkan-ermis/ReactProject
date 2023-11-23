@@ -14,7 +14,17 @@ export default class Movies extends Component {
   }
 
   render() {
-    const { movies, isFormOpen, changeFavorite } = this.props;
+    const {
+      movies: currentMovies,
+      isFormOpen,
+      changeFavorite,
+      favoriteMovies,
+    } = this.props;
+
+    const movies =
+      this.props.currentCategory === "Favoriler"
+        ? favoriteMovies
+        : currentMovies;
 
     return (
       <div className="wrapper-cards">

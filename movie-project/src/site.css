@@ -7,6 +7,7 @@
   --clr-primary: #232b2b;
   --clr-main: #a95237;
 }
+
 .main {
   background-color: var(--clr-dark);
   height: 100vh;
@@ -67,11 +68,15 @@
 .categories {
   display: inline-flex;
   margin-bottom: 2em;
+  padding-inline: 0.3em;
   padding: 0.6em;
+  width: 500px;
+  word-wrap: none;
 }
 
 .categoryItem {
-  margin-inline: 0.3em;
+  padding-inline: 0.3em;
+  word-wrap: none;
   cursor: pointer;
   color: aliceblue;
 }
@@ -136,8 +141,8 @@ a.logo img {
 }
 .oldComments {
   width: calc(100% - 6em);
-  margin: 3em;
-  padding: 1em 1em 0 1em;
+  margin: 2em;
+  padding: 0 1em 0 0;
 }
 .oldComment {
   background-color: rgb(12, 12, 12) !important;

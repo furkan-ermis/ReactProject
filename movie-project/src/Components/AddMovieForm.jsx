@@ -1,6 +1,6 @@
 import React, { Component } from "react";
+import toast, { Toaster } from "react-hot-toast";
 import { TfiClose } from "react-icons/tfi";
-
 export class AddMovieForm extends Component {
   state = {
     movieName: "",
@@ -20,6 +20,8 @@ export class AddMovieForm extends Component {
     const categories = this.props.categories;
     return (
       <div className="addMovieForm form-group">
+        <Toaster />
+
         <div className="d-flex justify-content-between">
           <h1>Add Movie</h1>
           <TfiClose
@@ -75,7 +77,13 @@ export class AddMovieForm extends Component {
         <button
           className="btn-form"
           onClick={() => {
-            this.props.addMovie(this.state);
+            this.state.movieName !== "" &&
+            this.state.desc !== "" &&
+            this.state.trailer !== "" &&
+            this.state.movie !== "" &&
+            this.state.image !== null
+              ? this.props.addMovie(this.state)
+              : toast.error("Eksik Veri Girdiniz..");
             this.setState({
               movieName: "",
               desc: "",
@@ -83,7 +91,6 @@ export class AddMovieForm extends Component {
               movie: "",
               image: null,
             });
-            alert(`Movie Eklendi`);
           }}
         >
           Add Movie

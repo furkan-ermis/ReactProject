@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 import { CiUser } from "react-icons/ci";
 function MovieComment({ movie }) {
   const [_comment, set_comment] = useState("");
@@ -7,7 +8,7 @@ function MovieComment({ movie }) {
   const AddComment = (movie) => {
     _name !== "" && _comment !== ""
       ? movie.comment.push({ isim: _name, yorum: _comment })
-      : alert("Please enter");
+      : toast.error("Lütfen Yorumunuzu ve Adınızı Giriniz");
     fetch(`http://localhost:3000/movies/${movie.id}`, {
       method: "PUT",
       headers: {
@@ -23,10 +24,13 @@ function MovieComment({ movie }) {
       .then((data) => {
         setComment(data.comment);
       });
+    set_name("");
+    set_comment("");
   };
   return (
     <>
       <h1> &nbsp;Comments</h1>
+      <Toaster />
       <div className="oldComments">
         {movie.comment.map((comment) => (
           <div

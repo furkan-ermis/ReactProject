@@ -34,10 +34,19 @@
       "image": "images/justiceleague.jpg",
       "desc": "A director's cut of the 2017 film Justice League, directed by Zack Snyder.",
       "trailer": "ui37YKQ9AC4?si=iNMgQRe3Ow7vejqr",
-      "rateCount": 0,
-      "rating": 0,
+      "rateCount": 5,
+      "rating": 3.8,
       "movie": "https://my.mail.ru/video/embed/7750209215083315785",
-      "comment": []
+      "comment": [
+        {
+          "isim": "Furkan",
+          "yorum": "Efsane bir Film Kesinlike tavsiye ederim"
+        },
+        {
+          "isim": "Furkan",
+          "yorum": "Aşırı iyi bir film zaten DC evreni Marveldan daha iyi ;)"
+        }
+      ]
     },
     {
       "id": 4,
@@ -60,21 +69,21 @@
       "image": "images/kostebek.jpg",
       "desc": "A crime thriller film directed by Martin Scorsese.",
       "trailer": "Msfcos16JmU?si=n9lMvsE3NvhNMqbp",
-      "rateCount": 0,
-      "rating": 0,
+      "rateCount": 2,
+      "rating": 3.5,
       "movie": "//ok.ru/videoembed/33470286561",
       "comment": []
     },
     {
       "id": 6,
-      "isFavorite": false,
+      "isFavorite": true,
       "categoryId": 1,
       "movieName": "Django Unchained",
       "image": "images/zincirsiz.jpg",
       "desc": "A Western film written and directed by Quentin Tarantino.",
       "trailer": "0fUCuvNlOCg?si=GrfUp6NHPaTt4BCy",
-      "rateCount": 0,
-      "rating": 0,
+      "rateCount": 5,
+      "rating": 3.4,
       "movie": "https://my.mail.ru/video/embed/7750209215083315531",
       "comment": []
     },
@@ -105,7 +114,7 @@
     },
     {
       "id": 9,
-      "isFavorite": false,
+      "isFavorite": true,
       "categoryId": 1,
       "movieName": "Mission: Impossible 7",
       "image": "images/missionimpossible7.jpg",
@@ -118,7 +127,7 @@
     },
     {
       "id": 10,
-      "isFavorite": false,
+      "isFavorite": true,
       "categoryId": 1,
       "movieName": "Tam Gaz",
       "image": "images/tamgaz.jpg",
@@ -131,7 +140,7 @@
     },
     {
       "id": 11,
-      "isFavorite": false,
+      "isFavorite": true,
       "categoryId": 6,
       "movieName": "Aynı Yıldızın Altında",
       "image": "images/ayniyildizinaltinda.jpg",
@@ -176,8 +185,8 @@
       "image": "images/birdbox.jpg",
       "desc": "A post-apocalyptic horror film directed by Susanne Bier.",
       "trailer": "1SvIwv4FLjE?si=zAUIh-NIa5mwAcQW",
-      "rateCount": 0,
-      "rating": 0,
+      "rateCount": 2,
+      "rating": 3,
       "movie": "https://my.mail.ru/video/embed/9197363450076989608",
       "comment": []
     },
@@ -222,7 +231,7 @@
     },
     {
       "id": 18,
-      "isFavorite": false,
+      "isFavorite": true,
       "categoryId": 5,
       "movieName": "Bay Evet",
       "image": "images/bayevet.jpg",

@@ -112,6 +112,7 @@ export default class App extends Component {
           isFormOpen={this.state.isFormOpen}
           addMovieForm={addMovieForm}
           getFavs={this.getFavs}
+          favoriteMovies={this.state.favoriteMovies}
         />
         <Container>
           <Row>
