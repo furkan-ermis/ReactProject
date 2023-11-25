@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: "MyFont";
+  src: local("neuropolitical rg"),
+    url("./fonts/neuropolitical rg.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "MyFont2";
+  src: local("Aller_Rg"), url("./fonts/Aller_Rg.ttf") format("truetype");
+  font-weight: bold;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

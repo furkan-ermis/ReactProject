@@ -1,0 +1,527 @@
+{
+  "hastaneler": [
+      {
+      "id": 1,
+      "adi": "Şehir Hastanesi",
+      "branslar": ["Dahiliye", "Cerrahi", "Kardiyoloji"],
+      "doktorlar": [
+          {
+            "id": 101,
+            "adi": "Dr. Ahmet Yılmaz",
+            "sifre": "123456",
+            "uzmanlikAlani": "Dahiliye",
+            "randevular": [
+              {
+                "id": 1001,
+                "tarih": "2023-12-01T10:00:00",
+                "hastaAdi": "Ali",
+                "hastaSoyadi": "Yılmaz"
+              },
+              {
+                "id": 1002,
+                "tarih": "2023-12-03T14:30:00",
+                "hastaAdi": "Ayşe",
+                "hastaSoyadi": "Demir"
+              },
+              {
+                "id": 1003,
+                "tarih": "2023-12-10T11:15:00",
+                "hastaAdi": "Mehmet",
+                "hastaSoyadi": "Yıldırım"
+              },
+              {
+                "id": 1004,
+                "tarih": "2023-12-12T16:45:00",
+                "hastaAdi": "Zeynep",
+                "hastaSoyadi": "Aydın"
+              }
+            ]
+          },
+          {
+            "id": 102,
+            "adi": "Dr. Ayşe Kaya",
+            "sifre": "123456",
+            "uzmanlikAlani": "Cerrahi",
+            "randevular": [
+              {
+                "id": 1005,
+                "tarih": "2023-12-05T09:15:00",
+                "hastaAdi": "Mehmet",
+                "hastaSoyadi": "Öztürk"
+              },
+              {
+                "id": 1006,
+                "tarih": "2023-12-08T14:00:00",
+                "hastaAdi": "Feyza",
+                "hastaSoyadi": "Akyol"
+              },
+              {
+                "id": 1007,
+                "tarih": "2023-12-15T10:30:00",
+                "hastaAdi": "Cem",
+                "hastaSoyadi": "Özdemir"
+              },
+              {
+                "id": 1008,
+                "tarih": "2023-12-18T12:45:00",
+                "hastaAdi": "Zehra",
+                "hastaSoyadi": "Koç"
+              }
+            ]
+          },
+          {
+            "id": 103,
+            "adi": "Dr. Mehmet Can",
+            "sifre": "123456",
+            "uzmanlikAlani": "Kardiyoloji",
+            "randevular": [
+              {
+                "id": 1009,
+                "tarih": "2023-12-02T11:30:00",
+                "hastaAdi": "Ahmet",
+                "hastaSoyadi": "Özdemir"
+              },
+              {
+                "id": 1010,
+                "tarih": "2023-12-09T15:45:00",
+                "hastaAdi": "Bilge",
+                "hastaSoyadi": "Kara"
+              },
+              {
+                "id": 1011,
+                "tarih": "2023-12-14T09:00:00",
+                "hastaAdi": "Selin",
+                "hastaSoyadi": "Güler"
+              },
+              {
+                "id": 1012,
+                "tarih": "2023-12-17T14:30:00",
+                "hastaAdi": "Ahmet",
+                "hastaSoyadi": "Taş"
+              }
+            ]
+          },
+          {
+            "id": 104,
+            "adi": "Dr. Fatma Demir",
+            "sifre": "123456",
+            "uzmanlikAlani": "Dahiliye",
+            "randevular": [
+              {
+                "id": 1013,
+                "tarih": "2023-12-03T14:30:00",
+                "hastaAdi": "Ayşe",
+                "hastaSoyadi": "Kaya"
+              },
+              {
+                "id": 1014,
+                "tarih": "2023-12-07T11:15:00",
+                "hastaAdi": "Ahmet",
+                "hastaSoyadi": "Yıldırım"
+              },
+              {
+                "id": 1015,
+                "tarih": "2023-12-11T16:45:00",
+                "hastaAdi": "Zeynep",
+                "hastaSoyadi": "Aydın"
+              },
+              {
+                "id": 1016,
+                "tarih": "2023-12-16T09:30:00",
+                "hastaAdi": "Kemal",
+                "hastaSoyadi": "Çelik"
+              }
+            ]
+          },
+          {
+            "id": 105,
+            "adi": "Dr. Hasan Yıldız",
+            "sifre": "123456",
+            "uzmanlikAlani": "Cerrahi",
+            "randevular": [
+              {
+                "id": 1017,
+                "tarih": "2023-12-04T12:00:00",
+                "hastaAdi": "Selin",
+                "hastaSoyadi": "Demir"
+              },
+              {
+                "id": 1018,
+                "tarih": "2023-12-08T15:30:00",
+                "hastaAdi": "Ahmet",
+                "hastaSoyadi": "Koç"
+              },
+              {
+                "id": 1019,
+                "tarih": "2023-12-12T10:45:00",
+                "hastaAdi": "Cem",
+                "hastaSoyadi": "Aydın"
+              },
+              {
+                "id": 1020,
+                "tarih": "2023-12-19T14:15:00",
+                "hastaAdi": "Gizem",
+                "hastaSoyadi": "Gür"
+              }
+            ]
+          }
+        ]
+      },
+      {
+      "id": 2,
+      "adi": "Memorial Hastanesi",
+      "branslar": ["Nöroloji", "Ortopedi", "Göz Hastalıkları"],
+      "doktorlar": [
+          {
+            "id": 201,
+            "adi": "Dr. Zeynep Aksoy",
+            "sifre": "123456",
+            "uzmanlikAlani": "Nöroloji",
+            "randevular": [
+              {
+                "id": 2001,
+                "tarih": "2023-12-02T11:30:00",
+                "hastaAdi": "Mustafa",
+                "hastaSoyadi": "Kaya"
+              },
+              {
+                "id": 2002,
+                "tarih": "2023-12-06T15:45:00",
+                "hastaAdi": "Aslı",
+                "hastaSoyadi": "Güneş"
+              },
+              {
+                "id": 2003,
+                "tarih": "2023-12-11T09:00:00",
+                "hastaAdi": "Fatih",
+                "hastaSoyadi": "Yılmaz"
+              },
+              {
+                "id": 2004,
+                "tarih": "2023-12-14T14:30:00",
+                "hastaAdi": "Bilge",
+                "hastaSoyadi": "Uysal"
+              }
+            ]
+          },
+          {
+            "id": 202,
+            "adi": "Dr. Ali Can",
+            "sifre": "123456",
+            "uzmanlikAlani": "Ortopedi",
+            "randevular": [
+              {
+                "id": 2005,
+                "tarih": "2023-12-07T10:15:00",
+                "hastaAdi": "Gizem",
+                "hastaSoyadi": "Acar"
+              },
+              {
+                "id": 2006,
+                "tarih": "2023-12-09T13:45:00",
+                "hastaAdi": "Umut",
+                "hastaSoyadi": "Bulut"
+              },
+              {
+                "id": 2007,
+                "tarih": "2023-12-13T12:00:00",
+                "hastaAdi": "Ahmet",
+                "hastaSoyadi": "Demirci"
+              },
+              {
+                "id": 2008,
+                "tarih": "2023-12-16T16:00:00",
+                "hastaAdi": "Gül",
+                "hastaSoyadi": "Yıldız"
+              }
+            ]
+          },
+          {
+            "id": 203,
+            "adi": "Dr. Aylin Demir",
+            "sifre": "123456",
+            "uzmanlikAlani": "Göz Hastalıkları",
+            "randevular": [
+              {
+                "id": 2009,
+                "tarih": "2023-12-03T11:30:00",
+                "hastaAdi": "Kemal",
+                "hastaSoyadi": "Aydın"
+              },
+              {
+                "id": 2010,
+                "tarih": "2023-12-08T14:45:00",
+                "hastaAdi": "Zeynep",
+                "hastaSoyadi": "Koç"
+              },
+              {
+                "id": 2011,
+                "tarih": "2023-12-12T10:00:00",
+                "hastaAdi": "Mehmet",
+                "hastaSoyadi": "Yıldız"
+              },
+              {
+                "id": 2012,
+                "tarih": "2023-12-18T15:30:00",
+                "hastaAdi": "Selin",
+                "hastaSoyadi": "Demir"
+              }
+            ]
+          },
+          {
+              "id": 204,
+              "adi": "Dr. Ali Yıldız",
+              "sifre": "ghi789",
+              "uzmanlikAlani": "Nöroloji",
+              "randevular": [
+                {
+                  "id": 2013,
+                  "tarih": "2023-12-02T11:30:00",
+                  "hastaAdi": "Zara",
+                  "hastaSoyadi": "Yılmaz"
+                },
+                {
+                  "id": 2014,
+                  "tarih": "2023-12-09T14:45:00",
+                  "hastaAdi": "Burak",
+                  "hastaSoyadi": "Kaya"
+                },
+                {
+                  "id": 2015,
+                  "tarih": "2023-12-16T17:15:00",
+                  "hastaAdi": "Ayşe",
+                  "hastaSoyadi": "Demir"
+                },
+                {
+                  "id": 2016,
+                  "tarih": "2023-12-23T19:00:00",
+                  "hastaAdi": "Mehmet",
+                  "hastaSoyadi": "Arslan"
+                }
+              ]
+          },
+          {
+              "id": 205,
+              "adi": "Dr. Zehra Arslan",
+              "sifre": "jkl012",
+              "uzmanlikAlani": "Göz Hastalıkları",
+              "randevular": [
+                {
+                  "id": 2017,
+                  "tarih": "2023-12-06T12:30:00",
+                  "hastaAdi": "Efe",
+                  "hastaSoyadi": "Çelik"
+                },
+                {
+                  "id": 2018,
+                  "tarih": "2023-12-13T15:45:00",
+                  "hastaAdi": "Selma",
+                  "hastaSoyadi": "Yıldırım"
+                },
+                {
+                  "id": 2019,
+                  "tarih": "2023-12-20T18:15:00",
+                  "hastaAdi": "Can",
+                  "hastaSoyadi": "Aydın"
+                },
+                {
+                  "id": 2020,
+                  "tarih": "2023-12-27T20:00:00",
+                  "hastaAdi": "Elif",
+                  "hastaSoyadi": "Yılmaz"
+                }
+              ]
+          }
+        ]
+      },
+      {
+      "id": 3,
+      "adi": "Acıbadem Hastanesi",
+      "branslar": ["Üroloji", "Kulak Burun Boğaz", "Psikiyatri"],
+      "doktorlar": [
+        {
+              "id": 301,
+              "adi": "Dr. Fatih Çetin",
+              "sifre": "123456",
+              "uzmanlikAlani": "Üroloji",
+              "randevular": [
+                {
+                  "id": 3001,
+                  "tarih": "2023-12-03T14:30:00",
+                  "hastaAdi": "Gamze",
+                  "hastaSoyadi": "Aydın"
+                },
+                {
+                  "id": 3002,
+                  "tarih": "2023-12-10T15:00:00",
+                  "hastaAdi": "Ali",
+                  "hastaSoyadi": "Yılmaz"
+                }
+              ]
+            },
+            {
+              "id": 302,
+              "adi": "Dr. Ayşe Yılmaz",
+              "sifre": "654321",
+              "uzmanlikAlani": "Üroloji",
+              "randevular": [
+                {
+                  "id": 3003,
+                  "tarih": "2023-12-15T10:30:00",
+                  "hastaAdi": "Mehmet",
+                  "hastaSoyadi": "Kaya"
+                },
+                {
+                  "id": 3004,
+                  "tarih": "2023-12-20T13:45:00",
+                  "hastaAdi": "Zeynep",
+                  "hastaSoyadi": "Şahin"
+                }
+              ]
+            }
+        ]
+      },
+      {
+      "id": 4,
+      "adi": "Florence Nightingale Hastane",
+      "branslar": ["Dahiliye", "Ortopedi", "Göz Hastalıkları"],
+      "doktorlar": [
+            {
+              "id": 401,
+              "adi": "Dr. Mehmet Yılmaz",
+              "sifre": "789012",
+              "uzmanlikAlani": "Dahiliye",
+              "randevular": [
+                {
+                  "id": 4001,
+                  "tarih": "2023-12-05T09:30:00",
+                  "hastaAdi": "Ahmet",
+                  "hastaSoyadi": "Can"
+                },
+                {
+                  "id": 4002,
+                  "tarih": "2023-12-12T11:15:00",
+                  "hastaAdi": "Selin",
+                  "hastaSoyadi": "Yıldız"
+                },
+                {
+                  "id": 4003,
+                  "tarih": "2023-12-19T14:45:00",
+                  "hastaAdi": "Cem",
+                  "hastaSoyadi": "Kaya"
+                },
+                {
+                  "id": 4004,
+                  "tarih": "2023-12-26T16:30:00",
+                  "hastaAdi": "Elif",
+                  "hastaSoyadi": "Şahin"
+                }
+              ]
+            },
+            {
+              "id": 402,
+              "adi": "Dr. Zeynep Demir",
+              "sifre": "345678",
+              "uzmanlikAlani": "Ortopedi",
+              "randevular": [
+                {
+                  "id": 4005,
+                  "tarih": "2023-12-08T10:30:00",
+                  "hastaAdi": "Eren",
+                  "hastaSoyadi": "Yılmaz"
+                },
+                {
+                  "id": 4006,
+                  "tarih": "2023-12-15T12:45:00",
+                  "hastaAdi": "Melis",
+                  "hastaSoyadi": "Çelik"
+                },
+                {
+                  "id": 4007,
+                  "tarih": "2023-12-22T15:15:00",
+                  "hastaAdi": "Murat",
+                  "hastaSoyadi": "Aydın"
+                },
+                {
+                  "id": 4008,
+                  "tarih": "2023-12-29T17:00:00",
+                  "hastaAdi": "Aslı",
+                  "hastaSoyadi": "Yıldırım"
+                }
+              ]
+            }
+      ]
+      },
+      {
+      "id": 5,
+      "adi": "Hisar Hastanesi",
+      "branslar": ["Göz Hastalıkları", "Kardiyoloji", "Dahiliye"],
+      "doktorlar": [
+            {
+              "id": 501,
+              "adi": "Dr. Ayşe Toprak",
+              "sifre": "abc123",
+              "uzmanlikAlani": "Göz Hastalıkları",
+              "randevular": [
+                {
+                  "id": 5001,
+                  "tarih": "2023-12-01T09:00:00",
+                  "hastaAdi": "Ahmet",
+                  "hastaSoyadi": "Yılmaz"
+                },
+                {
+                  "id": 5002,
+                  "tarih": "2023-12-08T11:15:00",
+                  "hastaAdi": "Selin",
+                  "hastaSoyadi": "Kaya"
+                },
+                {
+                  "id": 5003,
+                  "tarih": "2023-12-15T14:45:00",
+                  "hastaAdi": "Can",
+                  "hastaSoyadi": "Demir"
+                },
+                {
+                  "id": 5004,
+                  "tarih": "2023-12-22T17:30:00",
+                  "hastaAdi": "Zeynep",
+                  "hastaSoyadi": "Arslan"
+                }
+              ]
+            },
+            {
+              "id": 502,
+              "adi": "Dr. Mehmet Kaya",
+              "sifre": "def456",
+              "uzmanlikAlani": "Kardiyoloji",
+              "randevular": [
+                {
+                  "id": 5005,
+                  "tarih": "2023-12-05T10:30:00",
+                  "hastaAdi": "Eren",
+                  "hastaSoyadi": "Yıldız"
+                },
+                {
+                  "id": 5006,
+                  "tarih": "2023-12-12T13:45:00",
+                  "hastaAdi": "Melis",
+                  "hastaSoyadi": "Çelik"
+                },
+                {
+                  "id": 5007,
+                  "tarih": "2023-12-19T16:15:00",
+                  "hastaAdi": "Murat",
+                  "hastaSoyadi": "Aydın"
+                },
+                {
+                  "id": 5008,
+                  "tarih": "2023-12-26T18:00:00",
+                  "hastaAdi": "Aslı",
+                  "hastaSoyadi": "Yıldırım"
+                }
+              ]
+            }
+      ]
+      }
+      ]
+  }
