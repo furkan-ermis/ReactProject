@@ -9,11 +9,19 @@ const CreateAppointment = () => {
   function CreateAppointment() {
     const message = (
       <>
-        Hasta : Furkan Ermiş
-        <br />
-        Randevu Tarihi : 17 Aralık 2023 13:15 <br />
-        <br />
-        Randevunuz Başarı ile oluşturulmuştur <br />
+        <div className="container">
+          <strong style={{ color: "darkred" }}>Hasta: </strong>
+          Furkan Ermiş
+          <br />
+          <br />
+          <strong style={{ color: "darkred" }}>Randevu Tarihi :</strong>
+          17 Aralık 2023 13:15 <br />
+          <br />
+          <h5 style={{ color: "black" }}>
+            Randevunuz Başarı ile oluşturulmuştur
+          </h5>{" "}
+          <br />
+        </div>
       </>
     );
     toast.success(message, { className: "success" });
